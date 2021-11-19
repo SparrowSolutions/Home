@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <link rel="stylesheet" href="cube.css">
+        <script src="cube.js"></script>
+        <title>Sparrow-Solutions</title>
+        <style>
+            .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 5px;
+            background-color: DodgerBlue;
+            }
+
+            .flex-container > div {
+            background-color: DodgerBlue;
+            margin: auto;
+            text-align: center;
+            }
+            .header {
+            padding: 10px 16px;
+            background: #555;
+            color: #f1f1f1;
+            }
+            .sticky {
+            position:sticky;
+            top: 0;
+
+            }
+            .sticky + .flex-container {
+            padding-top: 102px;
+            }
+
+            .flip-card:hover{
+                transition: transform 0.8s;
+                transform: rotateY(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div >
+            <div style= "margin-left: 5%;margin-right: 5%; ">
+                <div class="header" id="myHeader">
+                    <h2>Sparrow-Solutions
+                    <img style="float:right;margin-bottom: 5px;" src="img/buymecof.png"></h2>
+                </div>
+                <div class="flex-container">
+                    <div style="text-align: left; margin:10px;">
+                        <img src="img/name.png"></br>
+                        <a style="font-family:sans-serif;font-size: 25px;color:#f1f1f1;">
+                            It is a desktop tool, built to help you write sql queries on excel and .csv data.<br/>
+                            
+                        </a>
+                        <a style="font-family:sans-serif;font-size: 25px;color:#f1f1f1;">
+                            Load the excel or .csv data onto the tool and execute SQL queries on it.<br/>
+                        </a>
+                        <a style="font-family:sans-serif;font-size: 25px;color:#f1f1f1;">
+                            But that is not the limit !! So much more is it's potential.</br>
+                        </a>
+                        <a style="font-family:sans-serif;font-size: 25px;color:#f1f1f1;">
+                            Come,</a><a style="font-family:sans-serif;font-size: 35px;color:#59f795;"> Explore </a> <a style="font-family:sans-serif;font-size: 25px;color:#f1f1f1;">and fell in love with it !!</br>
+                        </a>
+                    </div>
+                    <div style="color:#f1f1f1;"><img src='img/download1.png'><img src='img/download2.png'></div>
+                </div>
+                <div class="flex-container">
+                    <div style="align-items: left;box-shadow: 0 30px 15px rgba(0,0,0.4,0.45), 0 0 50px rgba(0,0,0,0.1) inset; transform: skewY(-20deg);">
+                        <img src="img/scr1.JPG" style="width:20rem;height:15rem;  ;">
+                    </div>
+                    <div style="text-align:left; align-items: left; "><img src='img/purpose.png'><br>
+                        <a  style="font-family:sans-serif;font-size: 25px;color:#f1f1f1;">Load excel files and start writing sql queries on the data</a></br>
+                        <a  style="font-family:sans-serif;font-size: 25px;color:#f1f1f1;"> to analyze better. Once loaded multiple files, complex sql </a></br>
+                        <a style="font-family:sans-serif;font-size: 25px;color:#f1f1f1;"> quries can be written to join the data from different files.</a></br>
+                        <a style="font-family:sans-serif;font-size: 25px;color:#f1f1f1;"> Data Analysis will be <a style="font-family:sans-serif;font-size: 45px;color:#4ff525;font-weight:bold;">fun</a><a style="font-family:sans-serif;font-size: 25px;color:#f1f1f1;"> now !!</a></a></p>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div><img  src="img/feature.png"></div>
+                    <div>
+                    <div id="container">
+                        <div class="btn-group-wraper">
+                          
+                            <button class="ft">1</button><button class="rt">2</button><button class="bk">3</button><button class="lt">4</button><button class="tp">5</button><button class="bm">6</button>
+                          
+                        </div>
+                        <div id="shape">
+                          <div class="ft" ><img src="img/ofln.png"></div>
+                          <div class="rt"><img src="img/ltwt3_1.png"></div>
+                          <div class="bk"><img src="img/op.png"></div>
+                          <div class="lt"><img src="img/sec.png"></div>
+                          <div class="tp"><img src="img/prtb2.png"></div>
+                          <div class="bm"><img src="img/scal.png"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div style="text-align: left;">
+                        <a id = "desc" style="font-family:sans-serif;font-size: 15px;color:#f1f1f1;text-align: top;"> Data analysis with this tool is now Easy and Fun !!</a><br/>
+                        <a id = "desc1" style="font-family:sans-serif;font-size: 15px;color:#f1f1f1;text-align: top;"></a><br/>
+                        <a id = "desc2" style="font-family:sans-serif;font-size: 15px;color:#f1f1f1;text-align: top;"></a>
+                    </div>
+                    
+                </div>
+
+                <div class="flex-container">
+                    <div><img src="img/testimonial.png"></div>
+                    
+                </div>
+                <div class="flex-container">
+                    <div>1thosksjdfkjshdfjsdhf</div>
+                    <div>2thosksjdfkjshdfjsdhf</div>
+                </div>
+                
+            </div>
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            }
+        </script>
+    </body>
+</html>
