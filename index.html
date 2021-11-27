@@ -5,6 +5,10 @@
         <link rel="stylesheet" href="cube.css">
         <script src="cube.js"></script>
         <title>Sparrow-Solutions</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+        <link rel="stylesheet" href="carousal.css">
         <style>
             .flex-container {
             display: flex;
@@ -36,6 +40,32 @@
                 transition: transform 0.8s;
                 transform: rotateY(180deg);
             }
+            .circular--square {
+                height: 180px;
+                width:145px;
+                border-radius: 50%;
+            }
+            .tbody {
+                position: absolute;
+                color:#f1f1f1;
+                top: 53%;
+                left: 16px;
+            }
+            .tname {
+                position: absolute;
+                color:#f1f1f1;
+                top: 8%;
+                left: 36%;
+            }
+            .ttitle {
+                position: absolute;
+                color:#f1f1f1;
+                font-style: italic;
+                font-size:12px;
+                top: 15%;
+                left: 38%;
+            }
+
         </style>
     </head>
     <body>
@@ -43,7 +73,7 @@
             <div style= "margin-left: 5%;margin-right: 5%; ">
                 <div class="header" id="myHeader">
                     <h2>Sparrow-Solutions
-                    <img style="float:right;margin-bottom: 5px;" src="img/buymecof.png"></h2>
+                    <a href='https://www.buymeacoffee.com/SpreadJoy' target="_blank"><img  style="float:right;margin-bottom: 5px;" src="img/buymecof.png"></a></h2>
                 </div>
                 <div class="flex-container">
                     <div style="text-align: left; margin:10px;">
@@ -62,7 +92,7 @@
                             Come,</a><a style="font-family:sans-serif;font-size: 35px;color:#59f795;"> Explore </a> <a style="font-family:sans-serif;font-size: 25px;color:#f1f1f1;">and fell in love with it !!</br>
                         </a>
                     </div>
-                    <div style="color:#f1f1f1;"><img src='img/download1.png'><img src='img/download2.png'></div>
+                    <div style="color:#f1f1f1;"><a href='https://drive.google.com/file/d/10hNoPwb4KxhHBnXvduC6V7FlIKw7Otoj/view?usp=sharing' target="_blank"><img src='img/download1.png' onclick=log('win')></a><a href='' target="_blank"><img src='img/download2.png' onclick=log('lin')></a></div>
                 </div>
                 <div class="flex-container">
                     <div style="align-items: left;box-shadow: 0 30px 15px rgba(0,0,0.4,0.45), 0 0 50px rgba(0,0,0,0.1) inset; transform: skewY(-20deg);">
@@ -106,13 +136,40 @@
                     <div><img src="img/testimonial.png"></div>
                     
                 </div>
-                <div class="flex-container">
-                    <div>1thosksjdfkjshdfjsdhf</div>
+                <div id="carrousel">
+                    <div class="container">
+                        
+                        <div class="col-md-12">
+                            <div class="owl-carousel owl-theme">
+                                <div><img src="img/testimonial1.png"><div class="tbody">This is a very useful tool. Well thought and crafted. Makes work lot easier.</div><div class="tname">Prashant Dahalkar</div><div class="ttitle">AVP @Hexaware</div></div>
+                                <div><img src="img/testimonial1.png"><div class="tbody">text</div><div class="tname">Subhranshu Panda</div><div class="ttitle">text</div></div>
+                                <div><img src="img/testimonial1.png"><div class="tbody">text</div><div class="tname">Indranil Basak</div><div class="ttitle">text</div></div>
+                                <div><img src="img/testimonial1.png"><div class="tbody">text</div><div class="tname">Rajib Bhattacharjee</div><div class="ttitle">text</div></div>
+                                <div><img src="img/testimonial1.png"><div class="tbody">text</div><div class="tname">Samantak Panda</div><div class="ttitle">text</div></div>
+                                <div><img src="img/testimonial1.png"><div class="tbody">text</div><div class="tname">Abhishek Ojha</div><div class="ttitle">text</div></div>
+                                <div><img src="img/testimonial1.png"><div class="tbody">text</div><div class="tname">Somanth Chaterjee</div><div class="ttitle">text</div></div>
+                                <div><img src="img/testimonial1.png"><div class="tbody">text</div><div class="tname">text</div><div class="ttitle">text</div></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="flex-container" >
+                    <div><img  class="circular--square" src="img/me2.png" /></div>
+                    <div>2thosksjdfkjshdfjsdhf</div>
+                    <div><img  class="circular--square" src="img/me2.png" /></div>
                     <div>2thosksjdfkjshdfjsdhf</div>
                 </div>
                 
             </div>
         </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
+        <script  src="carousal.js"></script>
         <script>
             window.onscroll = function() {myFunction()};
 
@@ -125,6 +182,15 @@
             } else {
                 header.classList.remove("sticky");
             }
+            }
+            function log(syst){
+                url="https://funky-crayfish-55.hasura.app/api/rest/Sahayak/"+syst;
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    alert("Thank you for downloading!!");
+                }
+                xhttp.open("POST", url);
+                xhttp.send();
             }
         </script>
     </body>
