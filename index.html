@@ -46,7 +46,7 @@
                 border-radius: 50%;
             }
             .tbody {
-                font-size: 13px;
+                font-size:12px;
                 position: absolute;
                 color:#f1f1f1;
                 top: 40%;
@@ -62,12 +62,21 @@
                 position: absolute;
                 color:#f1f1f1;
                 font-style: italic;
-                font-size:12px;
+                font-size:10px;
                 top: 15%;
+                left: 38%;
+            }
+            .lk {
+                position: absolute;
+                color:#f1f1f1;
+                font-style: italic;
+                font-size:12px;
+                top: 27%;
                 left: 38%;
             }
 
         </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <div >
@@ -93,7 +102,7 @@
                             Come,</a><a style="font-family:sans-serif;font-size: 35px;color:#59f795;"> Explore </a> <a style="font-family:sans-serif;font-size: 25px;color:#f1f1f1;">and fell in love with it !!</br>
                         </a>
                     </div>
-                    <div style="color:#f1f1f1;"><a href='https://drive.google.com/file/d/10hNoPwb4KxhHBnXvduC6V7FlIKw7Otoj/view?usp=sharing' target="_blank"><img src='img/download1.png' onclick=log('win')></a><a href='https://drive.google.com/file/d/1miwu5VyASHNwM0l7_Hz33FTFc4qbiP8n/view?usp=sharing' target="_blank"><img src='img/download2.png' onclick=log('lin')></a></div>
+                    <div style="color:#f1f1f1;"><a href='https://drive.google.com/file/d/10hNoPwb4KxhHBnXvduC6V7FlIKw7Otoj/view?usp=sharing' target="_blank"><img src='img/download1.png' onclick=log('win')></a><a href='' target="_blank"><img src='img/download2.png' onclick=log('lin')></a></div>
                 </div>
                 <div class="flex-container">
                     <div style="align-items: left;box-shadow: 0 30px 15px rgba(0,0,0.4,0.45), 0 0 50px rgba(0,0,0,0.1) inset; transform: skewY(-20deg);">
@@ -134,6 +143,7 @@
                 </div>
 
                 <div class="flex-container">
+                    <div><a style="color:#f1f1f1;font-size: 20px;text-align: left;">People are using</a> <a style="color:aquamarine;font-size: 24px;font-weight: bold;">Sahayak </a><a style="color:#f1f1f1;font-size: 20px;text-align: left;">and finding it very useful and handy.<br> See below what many IT professionals have to say.</a></div>
                     <div><img src="img/testimonial.png"></div>
                     
                 </div>
@@ -142,29 +152,27 @@
                         
                         <div class="col-md-12">
                             <div class="owl-carousel owl-theme">
-                                <div><img src="img/testimonial1.png"><div class="tbody">bla. bla bla bla bla bla bla bla bla bla .</div><div class="tname">Prashant Dahalkar</div><div class="ttitle">xyz @upz</div></div>
-                                <div><img src="img/testimonial_subhranshu.png"><div class="tbody">Excellent Utility for a user who wants to explore the features of querying tool and this will help in embedding to any small software where user wants to quickly query upon the uploaded data. Very good innovated utility and keep this energy to bring such more innovative ideas. </div><div class="tname">Subhranshu Panda</div><div class="ttitle">Sr. Cloud Architect @EY</div></div>
-                                <div><img src="img/testimonial1.png"><div class="tbody">text</div><div class="tname">Indranil Basak</div><div class="ttitle">text</div></div>
-                                <div><img src="img/testimonial1.png"><div class="tbody">text</div><div class="tname">Rajib Bhattacharjee</div><div class="ttitle">text</div></div>
-                                <div><img src="img/testimonial1.png"><div class="tbody">text</div><div class="tname">Samantak Panda</div><div class="ttitle">text</div></div>
-                                <div><img src="img/testimonial1.png"><div class="tbody">text</div><div class="tname">Abhishek Ojha</div><div class="ttitle">text</div></div>
-                                <div><img src="img/testimonial1.png"><div class="tbody">text</div><div class="tname">Somanth Chaterjee</div><div class="ttitle">text</div></div>
-                                <div><img src="img/testimonial1.png"><div class="tbody">text</div><div class="tname">text</div><div class="ttitle">text</div></div>
+                                <div><img src="img/testimonial_prashant.png"><a class="lk" href="https://www.linkedin.com/in/prashant-dahalkar/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a><div class="tbody">This is a very useful tool. Well thought and crafted. Makes work lot easier.</div><div class="tname">Prashant Dahalkar</div><div class="ttitle">AVP @Hexaware</div></div>
+                                <div><img src="img/testimonial_subhranshu.png"><a class="lk" href="https://www.linkedin.com/in/subhranshu-panda/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a><div class="tbody">Excellent Utility for a user who wants to explore the features of querying tool and this will help in embedding to any small software where user wants to quickly query upon the uploaded data. Very good innovated utility and keep this energy to bring such more innovative ideas. </div><div class="tname">Subhranshu Panda</div><div class="ttitle">Sr. Cloud Architect @EY</div></div>
+                                <div><img src="img/testimonial_indranil.png"><a class="lk" href="https://www.linkedin.com/in/indranil-basak-68864417/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a><div class="tbody">This is one of the important utility for data analyst to identify insight of fact, driver of uploaded data through query. This is fantastic utility can plug with any cloud environment reduce task of analysis of data. Excellent innovative idea, keep momentum awaiting others interesting features on this utility.</div><div class="tname">Indranil Basak</div><div class="ttitle">BI Architect @Oracle</div></div>
+                                <div><img src="img/testimonial_rajib.png"><a class="lk" href="https://www.linkedin.com/in/rajibbhattacharya/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a><div class="tbody">text</div><div class="tname">Rajib Bhattacharjee</div><div class="ttitle">Director | Global Leader - Data & Analytics @Cargil</div></div>
+                                <div><img src="img/testimonial1.png"><a class="lk" href="https://www.linkedin.com/in/samantakpanda/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a><div class="tbody">text</div><div class="tname">Samantak Panda</div><div class="ttitle">Founder @TuTeck</div></div>
+                                <div><img src="img/testimonial_abhishek.png"><a class="lk" href="https://www.linkedin.com/in/abhishek-ojha-76459713b/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a><div class="tbody">text</div><div class="tname">Abhishek Ojha</div><div class="ttitle">Software Engineer @Quicken</div></div>
+                                <div><img src="img/testimonial_somnath.png"><a class="lk" href="https://www.linkedin.com/in/somnath-chattopadhyay-9bb29927/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a><div class="tbody">text</div><div class="tname">Somanth Chaterjee</div><div class="ttitle">Engagement Delivery Lead</div></div>
+                                <div><img src="img/testimonial1.png"><a class="lk" href="https://www.linkedin.com/in/subhranshu-panda/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a><div class="tbody">text</div><div class="tname">text</div><div class="ttitle">text</div></div>
                             </div>
                         </div>
 
                     </div>
                 </div>
 
-
-
-
                 <div class="flex-container" >
-                    <div><img  class="circular--square" src="img/me2.png" /></div>
-                    <div>in progress</div>
-                    <div><img  class="circular--square" src="img/me2.png" /></div>
-                    <div>in progress</div>
+                    <div><img src="img/Tutoral.png"></div>
+                    <div><iframe src="https://youtube.com/embed/TJ0rKnKw-OA"></iframe></div>
+                    
                 </div>
+
+
                 
             </div>
         </div>
